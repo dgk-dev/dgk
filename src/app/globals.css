@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "pretendard/dist/web/variable/pretendardvariable.css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --shadow-aceternity:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, system-ui, sans-serif;
+}
+
+@theme {
+  --color-primary: var(--color-neutral-800);
+  --color-secondary: var(--color-neutral-500);
+
+  --shadow-section-inset:
+    0px 1px 4px 0px var(--color-neutral-100) inset,
+    0px -1px 4px 0px var(--color-neutral-100) inset;
+  --shadow-section-inset-dark:
+    0px 1px 4px 0px var(--color-neutral-950) inset,
+    0px -1px 4px 0px var(--color-neutral-950) inset;
+}
+
+.dark {
+  --color-primary: var(--color-neutral-200);
+  --color-secondary: var(--color-neutral-500);
+
+  --shadow-aceternity:
+    0px 2px 3px -1px rgba(255, 255, 255, 0.1),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.02),
+    0px 0px 0px 1px rgba(255, 255, 255, 0.08);
+}
