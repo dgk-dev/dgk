@@ -5,12 +5,15 @@ import { Scales } from "@/components/scales";
 import { Subheading } from "@/components/subheading";
 import { Metadata } from "next";
 import { siteConfig } from "@/constants/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "프로젝트",
   description:
     "강규석이 직접 만들고 운영하며 검증한 제품들. Pixeling, DaaSy, My Life Mentor를 중심으로 정리했습니다.",
-};
+  path: "/projects",
+  image: "/collage/pixeling-banner.png",
+});
 
 export default function ProjectsPage() {
   return (

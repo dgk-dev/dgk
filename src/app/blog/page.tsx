@@ -7,12 +7,15 @@ import { Subheading } from "@/components/subheading";
 import { Scales } from "@/components/scales";
 import { MotionDiv } from "@/components/motion-div";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "인사이트",
   description:
     "AX를 원하는 기업과 리더를 위해 정리한 제품, 운영, 의사결정 시스템 관점의 인사이트입니다.",
-};
+  path: "/blog",
+  image: "/blog/decision-system.png",
+});
 
 export default async function BlogsPage() {
   const allBlogs = await getBlogs();

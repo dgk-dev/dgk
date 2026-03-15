@@ -6,12 +6,15 @@ import { Subheading } from "@/components/subheading";
 import { Timeline } from "@/components/timeline";
 import { Metadata } from "next";
 import { siteConfig } from "@/constants/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "소개",
   description:
     "강규석의 커리어와 실행 방식. 사업 병목을 제품, 운영, 의사결정 시스템으로 바꿔온 흐름을 정리했습니다.",
-};
+  path: "/about",
+  image: "/collage/profile-banner.png",
+});
 
 export default function AboutPage() {
   return (

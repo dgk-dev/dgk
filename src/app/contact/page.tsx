@@ -5,12 +5,15 @@ import { Scales } from "@/components/scales";
 import { Subheading } from "@/components/subheading";
 import { Metadata } from "next";
 import { siteConfig } from "@/constants/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "문의",
   description:
     "기업 AX, AI 도입, Product Engineering 컨설팅 문의를 위한 연락 페이지입니다.",
-};
+  path: "/contact",
+  image: "/collage/profile-banner.png",
+});
 
 export default function ContactPage() {
   return (

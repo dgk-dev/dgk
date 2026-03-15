@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "강규석",
   englishName: "David-Daniel G. Kang",
   role: "Head of AI Product Engineering",
+  shortRole: "AX Strategist",
   location: "서울",
   email: "dgk@dgk.kr",
   domain: "https://dgk.kr",
@@ -31,6 +32,20 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/ddgk",
     threads: "https://www.threads.com/@ddg.kang",
   },
+  defaultOgImage: "/collage/profile-banner.png",
+  keywords: [
+    "강규석",
+    "AX Strategist",
+    "기업 AX",
+    "AI 도입",
+    "AI Product Engineering",
+    "Product Engineering",
+    "CTO",
+    "사업 병목",
+    "의사결정 시스템",
+    "운영 시스템",
+    "서울 AX 컨설팅",
+  ],
 };
 
 export const collageItems = [
