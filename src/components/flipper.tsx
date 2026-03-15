@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { siteConfig } from "@/constants/site";
 
 export const Flipper = () => {
