@@ -6,7 +6,7 @@ export const siteConfig = {
   location: "서울",
   email: "dgk@dgk.kr",
   domain: "https://dgk.kr",
-  avatar: "/avatar.jpg",
+  avatar: "/avatar.webp",
   metadataTitle: "강규석 | AX Strategist",
   metadataDescription:
     "사업 병목을 읽고 제품, 운영, 의사결정 시스템으로 바꾸는 개발 리더 강규석의 포트폴리오. 기업 AX, AI 도입, Product Engineering 컨설팅 문의를 위한 랜딩 페이지.",

@@ -38,6 +38,10 @@ export const Projects = ({
                 alt={project.title}
                 height={300}
                 width={300}
+                priority={idx === 0}
+                loading={idx === 0 ? "eager" : "lazy"}
+                fetchPriority={idx === 0 ? "high" : "auto"}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="w-full rounded-xl object-cover transition duration-200 group-hover:scale-[1.02]"
               />
               <div className="flex flex-1 flex-col justify-between py-4 transition-all duration-300 group-hover:px-4">
